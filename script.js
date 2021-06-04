@@ -11,8 +11,7 @@ inputBox.forEach(input => {
     //Getting Color Hex Value & ID
     const colorVal = input.value;
     const boxID = input.id;
-
-    console.log(input.id);
+    input.nextElementSibling.style.backgroundColor = colorVal;
 
     //Updating Value of textfeild to color
     input.style.color = colorVal;
@@ -20,7 +19,6 @@ inputBox.forEach(input => {
     //This code updates all the correct ID's colors
     const curElements = document.querySelectorAll(`.${boxID}`);
     curElements.forEach(elem => {
-        //console.log(elem);
         //Checking for 'background' special-case
         if(boxID != 'background'){
             elem.style.color = colorVal;
@@ -49,7 +47,9 @@ inputBox.forEach(input => {
         if(input.id === 'foreground'){
             document.querySelector('body').style.color = input.value;
         }
+        
         //Updates text input color
         input.style.color = input.value;
+        input.nextElementSibling.style.backgroundColor = input.value;
     });
 });
