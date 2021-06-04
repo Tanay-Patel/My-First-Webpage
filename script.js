@@ -1,10 +1,8 @@
-const bodyColor = document.getElementById('background').value;
-const foregroundColor = document.getElementById('foreground').value;
 const body = document.querySelector('body');
 const inputBox = document.querySelectorAll('.txtBox');
 
-body.style.backgroundColor = bodyColor;
-body.style.color = foregroundColor;
+body.style.backgroundColor = document.getElementById('background').value;
+body.style.color = document.getElementById('foreground').value;;
 
 //Looping through all the textboxes
 inputBox.forEach(input => {
@@ -12,9 +10,6 @@ inputBox.forEach(input => {
     const colorVal = input.value;
     const boxID = input.id;
     input.nextElementSibling.style.backgroundColor = colorVal;
-
-    //Updating Value of textfeild to color
-    input.style.color = colorVal;
 
     //This code updates all the correct ID's colors
     const curElements = document.querySelectorAll(`.${boxID}`);
@@ -47,7 +42,6 @@ inputBox.forEach(input => {
         }
 
         //Updates text input color
-        input.style.color = input.value;
         input.nextElementSibling.style.backgroundColor = input.value;
     });
 });
