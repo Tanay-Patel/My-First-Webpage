@@ -21,72 +21,74 @@
             <!--First Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Background</label>
-                <input class="txtBox" type="text" value="#2D2D2D" id="background">
+                <input class="txtBox" type="text" value="#282828" id="background">
                 <div class="sec"></div>
             </section>
 
-            <!--Second Section For Adjusting Foreground Color-->
+            <!--Second Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Foreground</label>
-                <input class="txtBox" type="text" value="#CDCDCD" id="foreground">
+                <input class="txtBox" type="text" value="#C7C7C7" id="foreground">
                 <div class="sec"></div>
             </section>
 
             <!--Third Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Keyword</label>
-                <input class="txtBox" type="text" value="#FFEEA6" id="keyword">
+                <input class="txtBox" type="text" value="#FFE061" id="keyword">
                 <div class="sec"></div>
             </section>
 
             <!--Fourth Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Variable</label>
-                <input class="txtBox" type="text" value="#F78D8C" id="variable">
+                <input class="txtBox" type="text" value="#FE747A" id="variable">
                 <div class="sec"></div>
             </section>
 
             <!--Fifth Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Object</label>
-                <input class="txtBox" type="text" value="#78AAD6" id="object">
+                <input class="txtBox" type="text" value="#6495DE" id="object">
                 <div class="sec"></div>
             </section>
 
             <!--Sixth Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Function</label>
-                <input class="txtBox" type="text" value="#76D4D6" id="function">
+                <input class="txtBox" type="text" value="#85DDED" id="function">
                 <div class="sec"></div>
             </section>
 
             <!--Seventh Section For Adjusting Background Color-->
             <section>
                 <label class="desc">String</label>
-                <input class="txtBox" type="text" value="#A8D3A9" id="string">
+                <input class="txtBox" type="text" value="#9CE963" id="string">
                 <div class="sec"></div>
             </section>
 
             <!--Eighth Section For Adjusting Background Color-->
             <section>
                 <label class="desc">Number</label>
-                <input class="txtBox" type="text" value="#ED9963" id="number">
+                <input class="txtBox" type="text" value="#FFABCD" id="number">
                 <div class="sec"></div>
             </section>
 
             <h2 id='exampleTitle'>Example Code</h2>
 
             <pre>
-<span class="variable">preview</span>.<span class="function">forEach</span>(<span class="variable">view</span> => {
-    <span class="keyword">const</span> <span class="variable">input</span> = <span class="variable">view</span>.previousElementSibling;
-    <span class="keyword">const</span> <span class="variable">value</span> = <span class="variable">input</span>.value;
+<span class="variable">inputBox</span>.<span class="function">forEach</span>(<span class="variable">input</span> => {
+    <span class="keyword">const</span> <span class="variable">colorVal</span> = <span class="variable">input</span>.value;
     <span class="keyword">const</span> <span class="variable">id</span> = <span class="variable">input</span>.id;
-    <span class="keyword">const</span> <span class="variable">spanClass</span> = <span class="object">document</span>.<span class="function">querySelectorAll</span>(<span class="string">`.${id}`</span>);
+    <span class="keyword">const</span> <span class="variable">nextElement</span> = <span class="variable">input</span>.nextElementSibling;
+    <span class="keyword">const</span> <span class="variable">elements</span> = <span class="object">document</span>.<span class="function">querySelectorAll</span>(<span class="string">`.${id}`</span>);
 
-    <span class="variable">view</span>.style.paddingLeft = <span class="number">20</span>;
+    <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"Hello World"</span>);
 
-    <span class="variable">spanClass</span>.<span class="function">forEach</span>(<span class="variable">span</span> => {
-        <span class="variable">span</span>.style.color = <span class="variable">input</span>.value;
+    <span class="variable">input</span>.style.paddingLeft = <span class="number">26</span>;
+
+    <span class="variable">elements</span>.<span class="function">forEach</span>(<span class="variable">elem</span> => {
+        <span class="variable">elem</span>.style.color = <span class="variable">input</span>.value;
     });
 });
             </pre>
