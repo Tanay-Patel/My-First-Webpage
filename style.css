@@ -1,4 +1,57 @@
-#main {
-    max-width: 1000px;
+html, pre {
+    font-family: 'Menlo', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 400px;
     margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainTitle {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Helvetica', monospace;
+}
+
+#exampleTitle {
+    font-size: 20px;
+    text-align: left;
+}
+
+.preview, label {
+    flex: 1;
+}
+
+input {
+    flex: 2;
+}
+
+.preview {
+    display: inline-block;
+    border: 1px solid gray;
+    height: 30px;
+}
+
+.desc{
+    font-size: 18px;
 }
