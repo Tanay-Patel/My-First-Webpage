@@ -1,6 +1,6 @@
 html, pre {
     font-family: 'Menlo', monospace;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -51,6 +51,6 @@ section {
     height: 30px;
 }
 
-.desc, .txtBox{
+.txtBox{
     font-size: 18px;
 }
