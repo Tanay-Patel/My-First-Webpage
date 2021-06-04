@@ -1,21 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-    <!--Head Of File-->
+
+<html>
+    
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coding Example</title>
 
-        <title> Nation Page Display </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
-        <link href="style.css" rel = "stylesheet"/> 
+        <link href='mystyle.css' rel='stylesheet'/>
 
     </head>
 
-    <body>
-        <div id='main'></div>
-        <script src="NationInfo.js"></script>
+    <body class="background">
+        <main>
+            <h1 id='mainTitle'>Color Changer</h1>
+
+            <!--First Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Background</label>
+                <input class="desc" type="text" value="#2D2D2D" id="background">
+                <div class="sec"></div>
+            </section>
+
+            <!--Second Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Foreground</label>
+                <input class="desc" type="text" value="#CDCDCD" id="foreground">
+                <div class="sec"></div>
+            </section>
+
+            <!--Third Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Keyword</label>
+                <input class="desc" type="text" value="#FFEEA6" id="keyword">
+                <div class="sec"></div>
+            </section>
+
+            <!--Fourth Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Variable</label>
+                <input class="desc" type="text" value="#F78D8C" id="variable">
+                <div class="sec"></div>
+            </section>
+
+            <!--Fifth Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Object</label>
+                <input class="desc" type="text" value="#78AAD6" id="object">
+                <div class="sec"></div>
+            </section>
+
+            <!--Sixth Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Function</label>
+                <input class="desc" type="text" value="#76D4D6" id="function">
+                <div class="sec"></div>
+            </section>
+
+            <!--Seventh Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">String</label>
+                <input class="desc" type="text" value="#A8D3A9" id="string">
+                <div class="sec"></div>
+            </section>
+
+            <!--Eighth Section For Adjusting Background Color-->
+            <section>
+                <label class="desc">Number</label>
+                <input class="desc" type="text" value="#ED9963" id="number">
+                <div class="sec"></div>
+            </section>
+
+            <h2 id='exampleTitle'>Example Code</h2>
+
+            <pre>
+<span class="variable">preview</span>.<span class="function">forEach</span>(<span class="variable">view</span> => {
+    <span class="keyword">const</span> <span class="variable">input</span> = <span class="variable">view</span>.previousElementSibling;
+    <span class="keyword">const</span> <span class="variable">value</span> = <span class="variable">input</span>.value;
+    <span class="keyword">const</span> <span class="variable">id</span> = <span class="variable">input</span>.id;
+    <span class="keyword">const</span> <span class="variable">spanClass</span> = <span class="object">document</span>.<span class="function">querySelectorAll</span>(<span class="string">`.${id}`</span>);
+
+    <span class="variable">view</span>.style.paddingLeft = <span class="number">20</span>;
+
+    <span class="variable">spanClass</span>.<span class="function">forEach</span>(<span class="variable">span</span> => {
+        <span class="variable">span</span>.style.color = <span class="variable">input</span>.value;
+    });
+});
+            </pre>
+
+        </main>
     </body>
 
 </html>
