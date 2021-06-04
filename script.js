@@ -24,9 +24,7 @@ inputBox.forEach(input => {
             elem.style.color = colorVal;
         }
     });
-
     
-
     //This code updates visuals on input
     input.addEventListener('blur', () => {
         
@@ -47,7 +45,7 @@ inputBox.forEach(input => {
         if(input.id === 'foreground'){
             document.querySelector('body').style.color = input.value;
         }
-        
+
         //Updates text input color
         input.style.color = input.value;
         input.nextElementSibling.style.backgroundColor = input.value;
