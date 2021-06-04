@@ -1,6 +1,6 @@
 html, pre {
     font-family: 'Menlo', monospace;
-    font-size: 0.9rem;
+    font-size: 12px;
     line-height: 1.5;
 }
 
@@ -19,7 +19,7 @@ input {
     font-size: 1rem;
     border: 1px solid gray;
     text-align: center;
-    flex: 5;
+    flex: 2;
 }
 
 section {
@@ -42,7 +42,7 @@ section {
 }
 
 .sec, label {
-    flex: 3;
+    flex: 1;
 }
 
 .sec {
