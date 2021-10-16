@@ -1,6 +1,7 @@
 # My First Static Website
 #### Coded by Tanay Patel
 <br />
+
 ## What is this?
 
 #### This was my first dive into making a webpage and web design. I used this as an opportunity to learn and apply some HTML, CSS and JavaScript. 
