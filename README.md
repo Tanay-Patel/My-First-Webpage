@@ -12,6 +12,6 @@ Overall I am happy that I choose to create this as it sparked my dive into learn
 <br />
  
 ## Results
-#### Below is an image of the webpage locally hosted.
+Below is an image of the webpage locally hosted.
 ![WebpageDisplay](ReadMeImages/Webpage.jpg)
  
