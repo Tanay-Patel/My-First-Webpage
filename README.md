@@ -13,5 +13,5 @@
  
 ## Results
 #### Below is an image of the webpage locally hosted.
-![WebpageDisplay](MyFirstWebsiteImages/Webpage.jpg)
+![WebpageDisplay](ReadMeImages/Webpage.jpg)
  
